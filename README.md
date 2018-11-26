@@ -50,6 +50,7 @@ p2.py
 - `image_callback()`: the image callback function passed into the imag subscriber. For every frame, it checks if the centroid of the mass of colored pixels is a red, blue, green, or yellow pixel in the original image. It turns left if the pixel is green, right if the pixel is blue, stops if the pixel is red, and follows the line if the pixel is yellow.
 
 #### Video
-Part 1:  
-Part 2:  
+Link: https://youtu.be/gdMtbxX9vEk  
+
+Part 1 and 2: https://youtu.be/gdMtbxX9vEk  
 Part 3:  
