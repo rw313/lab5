@@ -33,8 +33,8 @@ ROBOT_INITIAL_POSE="-x -2.85 -y -0.27 -Y 1.53" roslaunch followbot launch.launch
 
 In another terminal, run the script in the `src` directory.
 
-For part 1: `python p1.py`
-For part 2: `python p2.py`
+For part 1: `python p1.py`  
+For part 2: `python p2.py`  
 
 #### Files and Methods
 **Part 1**
