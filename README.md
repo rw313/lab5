@@ -35,7 +35,7 @@ In another terminal, run the script in the `src` directory.
 
 For part 1: `python p1.py`  
 For part 2: `python p2.py`  
-For part 3:  python p3.py
+For part 3: `python p3.py`
 #### Files and Methods
 **Part 1**
 p1.py
