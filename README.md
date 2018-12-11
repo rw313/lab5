@@ -35,7 +35,7 @@ In another terminal, run the script in the `src` directory.
 
 For part 1: `python p1.py`  
 For part 2: `python p2.py`  
-
+For part 3:  python p3.py
 #### Files and Methods
 **Part 1**
 p1.py
@@ -49,8 +49,12 @@ p2.py
 - `rotate()`: rotates the bot
 - `image_callback()`: the image callback function passed into the imag subscriber. For every frame, it checks if the centroid of the mass of colored pixels is a red, blue, green, or yellow pixel in the original image. It turns left if the pixel is green, right if the pixel is blue, stops if the pixel is red, and follows the line if the pixel is yellow.
 
-#### Video
-Link: https://youtu.be/gdMtbxX9vEk  
+**Part 3**
+p3.py
+   Follower : class that provides logic for the bot's movements. Initialized with several values corresponding to the lower and upper HSV bounds for the yellow and red color
+   get_mask_for_color() : given an HSV frame and color, this function returns 20 pixels of what the robot sees masked with the color. It works the same as in part 2.
+   rotate(): rotates the bot left or right. 
+   image_callback(): same concept as part 2, except this time it uses opencv to detect contours. Then using properties of the contours, it determines what direction the triangle is pointing. In our case, we use the centroid of the triangle and find the furthest point from it in the contour. That is the narrowest angle in the triangle and therefore the direction. If it falls on the left side of thecentroid of the yellow path, then we should turn left accordingly. 
 
-Part 1 and 2: https://youtu.be/gdMtbxX9vEk  
-Part 3:  
+#### Video
+Link: https://youtu.be/LCfubL0BRt8 
