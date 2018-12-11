@@ -51,10 +51,10 @@ p2.py
 
 **Part 3**
 p3.py
-   Follower : class that provides logic for the bot's movements. Initialized with several values corresponding to the lower and upper HSV bounds for the yellow and red color
-   get_mask_for_color() : given an HSV frame and color, this function returns 20 pixels of what the robot sees masked with the color. It works the same as in part 2.
-   rotate(): rotates the bot left or right. 
-   image_callback(): same concept as part 2, except this time it uses opencv to detect contours. Then using properties of the contours, it determines what direction the triangle is pointing. In our case, we use the centroid of the triangle and find the furthest point from it in the contour. That is the narrowest angle in the triangle and therefore the direction. If it falls on the left side of thecentroid of the yellow path, then we should turn left accordingly. 
+- `Follower` : class that provides logic for the bot's movements. Initialized with several values corresponding to the lower and upper HSV bounds for the yellow and red color
+- `get_mask_for_color()` : given an HSV frame and color, this function returns 20 pixels of what the robot sees masked with the color. It works the same as in part 2.
+- `rotate()`: rotates the bot left or right. 
+- `image_callback()`: same concept as part 2, except this time it uses opencv to detect contours. Then using properties of the contours, it determines what direction the triangle is pointing. In our case, we use the centroid of the triangle and find the furthest point from it in the contour. That is the narrowest angle in the triangle and therefore the direction. If it falls on the left side of thecentroid of the yellow path, then we should turn left accordingly. 
 
 #### Video
 Link: https://youtu.be/LCfubL0BRt8 
